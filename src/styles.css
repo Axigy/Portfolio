@@ -1,0 +1,50 @@
+:root {
+  --main-color: #004445;
+  --accent-color: #f8b400;
+  --secondary-color: #2c786c;
+  --light-color: #faf5e4;
+  --border-style: 2px solid #2c786c;
+}
+
+body {
+  text-align: center;
+  font-family: "Bitter", serif;
+}
+
+.header {
+  margin: 32px auto;
+}
+h1 {
+  color: var(--main-color);
+}
+h1 span {
+  color: var(--accent-color);
+  font-size: larger;
+}
+h2 {
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 48px 20px;
+}
+.navigation a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border: var(--border-style);
+  border-radius: 4px;
+  font-weight: 700;
+  box-shadow: 5px 4px 16px rgba(44, 120, 108, 0.2);
+}
+#contact-btn {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
+
+#about-btn {
+  color: var(--secondary-color);
+}
