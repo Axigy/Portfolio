@@ -48,3 +48,24 @@ h2 {
 #about-btn {
   color: var(--secondary-color);
 }
+#home-btn {
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  box-shadow: 5px 4px 16px rgba(44, 120, 108, 0.2);
+}
+
+#about-me-container {
+  display: flex;
+  justify-content: center;
+}
+#about-me-container p {
+  border: var(--border-style);
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  margin: 24px 48px;
+  padding: 24px 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
