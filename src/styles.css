@@ -12,8 +12,6 @@ body {
   color: var(--main-color);
 }
 .header {
-  background-image: url(../img/tree-bg.jpg);
-  background-size: cover;
   padding: 32px;
   margin: 0 auto;
 }
@@ -30,12 +28,15 @@ body {
   font-size: larger;
   font-family: "Abril Fatface", cursive;
 }
+.projects-section {
+}
 .projects-header {
   font-family: "Abril Fatface", cursive;
   padding: 24px;
 }
 .projects-section .container .row {
   border: 2px solid var(--main-bg);
+  background-color: var(--secondary-bg);
   border-radius: 8px;
 }
 .project-img {
