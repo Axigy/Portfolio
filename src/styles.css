@@ -28,8 +28,7 @@ body {
   font-size: larger;
   font-family: "Abril Fatface", cursive;
 }
-.projects-section {
-}
+
 .projects-header {
   font-family: "Abril Fatface", cursive;
   padding: 24px;
@@ -66,11 +65,4 @@ body {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-}
-#contact-container {
-  background-image: url("../img/star-bg.jpg");
-  background-size: cover;
-  background-color: var(--secondary-bg);
-  background-attachment: fixed;
-  opacity: 0.6;
 }
