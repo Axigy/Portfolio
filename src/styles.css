@@ -33,7 +33,7 @@ body {
   font-family: "Abril Fatface", cursive;
   padding: 24px;
 }
-.projects-section .container .row {
+.info-block {
   border: 2px solid var(--main-bg);
   background-color: var(--secondary-bg);
   border-radius: 8px;
@@ -41,7 +41,7 @@ body {
 .project-img {
   width: 100%;
   margin: 16px 24px;
-  padding: 16px;
+  padding: 8px;
   border: 2px solid var(--accent-color);
   background-color: var(--secondary-bg);
   border-radius: 8px;
@@ -53,16 +53,21 @@ body {
   line-height: 2em;
   font-size: 18px;
 }
-#about-me-container {
-  display: flex;
-  justify-content: center;
-}
-#about-me-container p {
+
+.social {
   background-color: var(--secondary-bg);
-  color: var(--main-color);
   margin: 24px 48px;
   padding: 24px 16px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
+  border-radius: 8px;
+}
+#contact-container h1,
+.about {
+  font-family: "Abril Fatface", cursive;
+  color: var(--accent-color);
+}
+.social p a {
+  text-decoration: none;
+  color: #d65a31;
 }
