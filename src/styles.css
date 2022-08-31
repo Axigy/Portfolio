@@ -20,8 +20,8 @@ body {
 }
 .introduction-bg {
   opacity: 0.4;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 .projects-section .container {
   position: absolute;
@@ -44,12 +44,24 @@ body {
   font-family: "Abril Fatface", cursive;
   padding: 24px;
 }
+.projects-section .container .row {
+  border: 2px solid var(--main-bg);
+  border-radius: 8px;
+}
 .project-img {
+  width: 100%;
   margin: 8px 24px;
   padding: 16px;
   border: 2px solid var(--accent-color);
   background-color: var(--secondary-bg);
   border-radius: 8px;
+}
+.projects-description {
+  text-align: center;
+  margin: 8px 24px;
+  padding: 16px;
+  line-height: 2em;
+  font-size: 18px;
 }
 #about-me-container {
   display: flex;
