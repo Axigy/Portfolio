@@ -69,3 +69,10 @@ html {
   text-decoration: none;
   color: #d65a31;
 }
+
+@media (max-width: 758px) {
+  .introduction span {
+    padding: 16px 0;
+    margin: 24px auto;
+  }
+}
