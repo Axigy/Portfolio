@@ -75,9 +75,9 @@ html {
 @media (max-width: 900px) {
   .introduction span {
     padding: 16px 0;
-    margin: 24px auto;
+    margin: 24px 0;
   }
-  #contact {
+  .container #contact {
     text-align: center;
     margin: 0;
   }
