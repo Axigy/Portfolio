@@ -1,6 +1,6 @@
 :root {
-  --main-bg: #222831;
-  --main-color: #eeeeee;
+  --main-bg: #eeeeee;
+  --main-color: #000;
   --accent-color: #d65a31;
   --secondary-bg: #393e46;
 }
@@ -8,25 +8,46 @@
 body,
 html {
   text-align: center;
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Junge", serif;
   background: var(--main-bg);
   color: var(--main-color);
 }
-.header {
-  padding: 32px;
+.header-class {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.main-page {
+  background-image: url("/img/main_back.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 100%;
+  height: 72.81rem;
+  position: absolute;
 }
 
-.navbar-main-btn {
-  color: var(--accent-color);
-  font-family: "Abril Fatface", cursive;
-}
 .introduction {
-  color: var(--main-color);
+  margin-top: 2.5rem;
+  padding: 2rem 0;
 }
-.introduction span {
-  color: var(--accent-color);
-  font-size: 1.3em;
-  font-family: "Abril Fatface", cursive;
+.papper {
+  position: relative;
+  bottom: -40rem;
+}
+.papper .mail-link {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-decoration: none;
+  transform: rotate(0.05turn);
+}
+
+.papper .linkedin-link {
+  width: 4em;
 }
 
 .projects-header {
@@ -77,7 +98,7 @@ html {
     padding: 16px 0;
     margin: 24px 0;
   }
-  .container #contact {
+  #contact {
     text-align: center;
     margin: 0;
   }
