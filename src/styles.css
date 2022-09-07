@@ -1,7 +1,7 @@
 :root {
   --main-bg: #eeeeee;
   --main-color: #000;
-  --accent-color: #d65a31;
+  --accent-color: #6fad98;
   --secondary-bg: #393e46;
 }
 
@@ -28,37 +28,33 @@ html {
   width: 100%;
   height: 72.81rem;
   position: absolute;
+  padding: 2rem 0;
+  margin-top: 2.5rem;
 }
 
-.introduction {
-  margin-top: 2.5rem;
-  padding: 2rem 0;
-}
 .papper {
   position: relative;
-  bottom: -40rem;
+  bottom: -45rem;
 }
 .papper .mail-link {
   display: block;
   font-size: 1.5rem;
   color: var(--main-color);
   text-decoration: none;
-  transform: rotate(0.05turn);
+  transform: rotate(0.055turn);
 }
-
 .papper .linkedin-link {
   width: 4em;
 }
 
-.projects-header {
-  font-family: "Abril Fatface", cursive;
-  padding: 24px;
+.projects-section {
+  background-image: url("/img/secondary_back.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 6.5rem 0;
+  color: var(--main-bg);
 }
-.info-block {
-  border: 2px solid var(--main-bg);
-  background-color: var(--secondary-bg);
-  border-radius: 8px;
-}
+
 .project-img {
   width: 90%;
   margin: 16px 24px;
@@ -72,25 +68,6 @@ html {
   padding: 16px;
   line-height: 2em;
   font-size: 18px;
-}
-
-.social {
-  margin: 24px auto;
-  padding: 24px 16px;
-  font-size: 1.125rem;
-  border-radius: 8px;
-}
-#contact h1,
-.about {
-  font-family: "Abril Fatface", cursive;
-  color: var(--accent-color);
-}
-#contact {
-  background-color: var(--secondary-bg);
-}
-.social p a {
-  text-decoration: none;
-  color: #d65a31;
 }
 
 @media (max-width: 900px) {
