@@ -57,10 +57,6 @@ body {
 .papper .link:hover {
   background: rgb(231, 241, 235, 0.7);
 }
-.papper .linkedin-link {
-  width: 4em;
-}
-
 .projects-section {
   background-image: url("/img/secondary_back.png");
   background-size: cover;
@@ -119,6 +115,7 @@ body {
   margin: 2.5rem 0;
 }
 .contact-page {
+  margin: 0 auto;
   position: relative;
 }
 .contact-page img {
@@ -129,6 +126,16 @@ body {
 .contacts {
   padding: 6rem 0 0 0;
   position: absolute;
+  right: 50%;
+}
+.contact-block {
+  font-size: 1.5rem;
+  position: absolute;
+  line-height: 2.5em;
+}
+.contact-block div a {
+  color: var(--main-color);
+  text-decoration: none;
 }
 footer {
   width: 100%;
