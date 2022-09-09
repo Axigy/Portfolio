@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta
       name="description"
       content="This is a Anhelina Kruptseva portfolio page made by herself"
     />
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Junge&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,17 +25,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
     "
     />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
     "></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Front-end developer portfolio, about me: Anhelina Kruptseva</title>
+    <title>Front-end developer portfolio: Anhelina Kruptseva</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top"">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" title="main navbar button">
-          <span class="navbar-main-btn">Anhelina</span>
+          <span class="navbar-main-btn"
+            ><img src="img/group.png" alt="label" width="40px"
+          /></span>
         </a>
         <button
           class="navbar-toggler"
@@ -45,21 +52,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#projects">Projects</a>
+              <a class="nav-link" href="index.html" title="button to main page"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
+                href="project.html"
+                title="button to my projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 href="about.html"
                 title="button to about me and contact page"
                 >About me</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html#contact"
-                title="button to contacts"
+              <a class="nav-link" href="contact.html" title="button to contacts"
                 >Contact</a
               >
             </li>
@@ -67,16 +81,16 @@
         </div>
       </div>
     </nav>
-    <div class="header">
-      <h1 class="about">About me</h1>
+    <div class="about-page">
+      <h1 class="header-class">About me</h1>
       <div class="container">
         <div class="row info-block">
           <div class="col-sm-4">
             <img
-              src="img/resume-photo.jpg"
+              src="/img/resume-photo.png"
               alt="resume photo"
-              class="project-img"
-              width="100px"
+              class="hero-photo"
+              
             />
           </div>
           <div class="col-sm-8">
@@ -132,32 +146,6 @@
         </div>
       </div>
     </div>
-    <div class="container" id="contact">
-      <h1>Contact</h1>
-      <div class="row">
-        <div class="col-sm-3 social">
-          <a
-            href="https://www.linkedin.com/in/anhelina-kruptseva/"
-            target="_blank"
-            class="social-link"
-            ><img
-              src="img/linkedin_social_icon.png"
-              alt="linkedin"
-              width="60px"
-          /></a>
-        </div>
-        <div class="col-sm-3 social">
-          <a href="https://github.com/Axigy" target="_blank"
-            ><img src="img/github_icon.png" width="60px" />
-          </a>
-        </div>
-        <div class="col-sm-6 social">
-          <p>
-            E-mail:
-            <a href="mailto:axigy00@gmail.com">axigy00@gmail.com</a>
-          </p>
-        </div>
-      </div>
-    </div>
+    
   </body>
 </html>
