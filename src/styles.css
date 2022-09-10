@@ -156,7 +156,12 @@ body {
 .certificates div {
   padding: 1.5rem 0 3rem 0;
 }
-
+@media (max-width: 900px) {
+  .project-img {
+    width: 300px;
+    padding: 4px;
+  }
+}
 .contacts {
   position: relative;
   margin: 0;
