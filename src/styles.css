@@ -18,6 +18,7 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
   text-shadow: var(--text-shadow);
+  font-size: calc(1.375rem + 1.5vw);
 }
 .navbar-collapse {
   flex-grow: 0;
@@ -120,29 +121,67 @@ body {
 .certificates div {
   padding: 1.5rem 0 3rem 0;
 }
-.contact-page {
-  padding-top: 5rem;
-}
-.contact-page img {
-  width: 100%;
-}
+
 .contacts {
-  background: url(/img/contact_back.png) 0 0 no-repeat;
+  position: relative;
+  margin: 0;
+}
+.contact-img {
+  width: 100%;
+  display: block;
 }
 .contact-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.header-class {
+  left: 32%;
+  top: 10%;
+}
+.type-1 {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--main-color);
+  left: 41%;
+  top: 30%;
+}
+.type-2 {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  left: 46%;
+  top: 35%;
 }
 
-.contact-block div a {
-  color: var(--main-color);
+.type-3 {
   text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  left: 46%;
+  top: 40%;
 }
+.contact i {
+  color: var(--accent-color);
+  padding: 0 16px;
+}
+
 footer {
   width: 100%;
   background: rgb(231, 241, 235, 0.3);
   opacity: 0.8;
   padding: 16px;
 }
-footer img {
+footer .fa-github {
   width: 2rem;
 }
 @media (max-width: 900px) {
