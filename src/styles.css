@@ -44,7 +44,7 @@ body {
   border-radius: 16px;
   margin: 2rem 0;
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--accent-color);
   text-decoration: none;
   transform: rotate(0.055turn);
@@ -58,6 +58,40 @@ body {
   left: 42%;
   top: 72%;
 }
+@media (max-width: 900px) {
+  .link-1 {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 41%;
+    top: 62%;
+  }
+  .link-2 {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 38%;
+    top: 70%;
+  }
+  .introduction {
+    position: absolute;
+    top: 15%;
+    font-size: smaller;
+    color: var(--main-color);
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .link-1 {
+    position: absolute;
+    left: 40%;
+    top: 57%;
+  }
+  .link-2 {
+    position: absolute;
+    left: 38%;
+    top: 65%;
+  }
+}
+
 .projects-section {
   background-image: url("/img/secondary_back.png");
   background-size: cover;
@@ -182,6 +216,4 @@ footer {
 }
 footer .fa-github {
   width: 2rem;
-}
-@media (max-width: 900px) {
 }
