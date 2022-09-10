@@ -33,6 +33,7 @@ body {
 .introduction {
   position: absolute;
   top: 10%;
+  left: 10%;
 }
 
 .link-1,
@@ -150,22 +151,16 @@ body {
 }
 .type-1 {
   font-size: 1.5rem;
-  text-decoration: none;
-  color: var(--main-color);
   left: 41%;
   top: 30%;
 }
 .type-2 {
-  text-decoration: none;
-  color: var(--main-color);
   font-size: 1.5rem;
   left: 46%;
   top: 35%;
 }
 
 .type-3 {
-  text-decoration: none;
-  color: var(--main-color);
   font-size: 1.5rem;
   left: 46%;
   top: 40%;
@@ -173,6 +168,10 @@ body {
 .contact i {
   color: var(--accent-color);
   padding: 0 16px;
+}
+.contact a {
+  color: var(--main-color);
+  text-decoration: none;
 }
 
 footer {
