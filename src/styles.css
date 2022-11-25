@@ -35,7 +35,11 @@ body {
   top: 10%;
   left: 10%;
 }
-
+ @media (max-aspect-ratio: 3/2) {
+  .main-page img {
+    background-position: 20% top;
+  }
+ }
 .link-1,
 .link-2 {
   position: absolute;
