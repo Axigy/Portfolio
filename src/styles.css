@@ -12,6 +12,43 @@ body {
   background: var(--main-bg);
   color: var(--main-color);
 }
+.navbar-brand {
+  position: relative;
+  border: #393e46 2px solid;
+  padding: 4px;
+  border-radius: 8px;
+  transition: all 200ms ease-out;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.navbar-brand:hover {
+  color: #f2f8f4;
+  text-shadow: 2px 2px 0px #333333, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.navbar-brand::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #393e46;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+.navbar-brand:hover::before {
+  transform: scaleX(1) skewX(27deg);
+}
+.nav-link.active {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: color 1s;
+  overflow: hidden;
+}
 .header-class {
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -26,24 +63,12 @@ body {
 .main-page {
   position: relative;
 }
-.main-page img {
-  width: 100%;
-  display: block;
-}
+
 .introduction {
-  position: absolute;
-  top: 10%;
-  left: 10%;
 }
- @media (max-aspect-ratio: 3/2) {
-  .main-page img {
-    background-position: 20% top;
-  }
- }
+
 .link-1,
 .link-2 {
-  position: absolute;
-  padding: 1rem 0.5rem;
   font-family: "Qwitcher Grypen", cursive;
   border-radius: 16px;
   margin: 2rem 0;
@@ -52,48 +77,6 @@ body {
   color: var(--accent-color);
   text-decoration: none;
   transform: rotate(0.055turn);
-  transition: all 200ms ease-in-out;
-}
-.link-1 {
-  left: 44%;
-  top: 67%;
-}
-.link-2 {
-  left: 42%;
-  top: 72%;
-}
-@media (max-width: 900px) {
-  .link-1 {
-    font-size: 1.5rem;
-    position: absolute;
-    left: 41%;
-    top: 62%;
-  }
-  .link-2 {
-    font-size: 1.5rem;
-    position: absolute;
-    left: 38%;
-    top: 70%;
-  }
-  .introduction {
-    position: absolute;
-    top: 15%;
-    font-size: smaller;
-    color: var(--main-color);
-    font-weight: 600;
-  }
-}
-@media (max-width: 500px) {
-  .link-1 {
-    position: absolute;
-    left: 40%;
-    top: 57%;
-  }
-  .link-2 {
-    position: absolute;
-    left: 38%;
-    top: 65%;
-  }
 }
 
 .projects-section {
@@ -123,7 +106,7 @@ body {
 }
 .about-page {
   padding-top: 5rem;
-  background: var(--main-bg)
+  background: var(--main-bg);
   background-size: cover;
 }
 .about-intro {
@@ -245,7 +228,7 @@ footer {
   width: 100%;
   background: rgb(231, 241, 235, 0.3);
   opacity: 0.8;
-  padding: 16px;
+  padding-top: 16px;
 }
 footer .email {
   text-decoration: none;
