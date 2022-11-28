@@ -3,27 +3,36 @@
   --main-color: #110e12;
   --accent-color: #704654;
   --secondary-bg: #393e46;
-  --text-shadow: 9px 0px 10px rgba(112, 70, 84, 0.2);
+  --text-shadow: 2px 2px 0px var(--secondary-bg),
+    5px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
   text-align: center;
   font-family: "Junge", serif;
   background: var(--main-bg);
   color: var(--main-color);
 }
+.navbar-collapse {
+  flex-grow: 0;
+}
 .navbar-brand {
   position: relative;
-  border: #393e46 2px solid;
+  border: var(--main-color) 2px solid;
   padding: 4px;
   border-radius: 8px;
   transition: all 200ms ease-out;
-  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  text-shadow: 2px 2px 0px var(--main-bg), 5px 4px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 .navbar-brand:hover {
-  color: #f2f8f4;
-  text-shadow: 2px 2px 0px #333333, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--main-bg);
+  text-shadow: var(--text-shadow);
 }
 .navbar-brand::before {
   content: "";
@@ -33,7 +42,7 @@ body {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background-color: #393e46;
+  background-color: var(--main-color);
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
   transition: transform 1s;
@@ -49,6 +58,14 @@ body {
   transition: color 1s;
   overflow: hidden;
 }
+
+.introduction {
+  padding-top: 20vh;
+  max-width: 100%;
+  min-height: 60vh;
+  border-bottom: var(--main-color) 2px solid;
+}
+
 .header-class {
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -57,20 +74,12 @@ body {
   text-shadow: var(--text-shadow);
   font-size: calc(1.375rem + 1.5vw);
 }
-.navbar-collapse {
-  flex-grow: 0;
-}
-.main-page {
-  position: relative;
-}
-
-.introduction {
-}
-
-.link-1,
-.link-2 {
+.papper {
   font-family: "Qwitcher Grypen", cursive;
   border-radius: 16px;
+}
+.link-1,
+.link-2 {
   margin: 2rem 0;
   display: block;
   font-size: 2.5rem;
