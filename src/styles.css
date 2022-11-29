@@ -192,6 +192,12 @@ html {
   max-width: 400px;
 }
 
+.carousel .carousel-control-next-icon {
+  background-image: url(../img/next.png);
+}
+.carousel .carousel-control-prev-icon {
+  background-image: url(../img/back.png);
+}
 .contact-block {
   background: url(../img/contact_back.png) no-repeat center center;
   background-size: cover;
@@ -220,6 +226,7 @@ html {
   color: var(--main-color);
   text-decoration: none;
 }
+
 @media (max-width: 900px) {
   .papper {
     left: 28%;
