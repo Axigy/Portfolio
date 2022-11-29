@@ -107,9 +107,14 @@ html {
 }
 
 .projects-section {
-  background-image: url("/img/secondary_back.png");
-  background-size: cover;
-  background-attachment: fixed;
+  background: linear-gradient(
+    to right,
+    rgba(176, 243, 241, 1) 0%,
+    rgba(247, 211, 225, 0.79) 64%,
+    rgba(255, 207, 223, 0.79) 71%,
+    rgba(255, 207, 223, 0.79) 100%
+  );
+  max-width: 100%;
   padding: 6.5rem 0;
 }
 .info-block {
@@ -259,7 +264,7 @@ html {
 
 footer {
   width: 100%;
-  background: rgb(231, 241, 235, 0.3);
+  background: #f8f9fa;
   opacity: 0.8;
   padding-top: 16px;
 }
