@@ -58,7 +58,6 @@ html {
   font-size: 18px;
   font-weight: 600;
   color: #333333;
-  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
   transition: color 1s;
   overflow: hidden;
 }
@@ -107,12 +106,11 @@ html {
 }
 
 .projects-section {
+  background: rgb(222, 235, 221);
   background: linear-gradient(
-    to right,
-    rgba(176, 243, 241, 1) 0%,
-    rgba(247, 211, 225, 0.79) 64%,
-    rgba(255, 207, 223, 0.79) 71%,
-    rgba(255, 207, 223, 0.79) 100%
+    180deg,
+    rgba(222, 235, 221, 1) 14%,
+    rgba(187, 219, 190, 0.9923319669664741) 78%
   );
   max-width: 100%;
   padding: 20vh 16px;
@@ -136,12 +134,11 @@ html {
   text-align: left;
 }
 .about-page {
+  background: rgb(222, 235, 221);
   background: linear-gradient(
-    to right,
-    rgba(176, 243, 241, 1) 0%,
-    rgba(247, 211, 225, 0.79) 64%,
-    rgba(255, 207, 223, 0.79) 71%,
-    rgba(255, 207, 223, 0.79) 100%
+    180deg,
+    rgba(222, 235, 221, 1) 14%,
+    rgba(187, 219, 190, 0.9923319669664741) 78%
   );
   padding: 20vh 0;
   max-width: 100%;
