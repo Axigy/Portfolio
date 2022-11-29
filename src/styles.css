@@ -115,19 +115,15 @@ html {
     rgba(255, 207, 223, 0.79) 100%
   );
   max-width: 100%;
-  padding: 6.5rem 0;
+  padding: 20vh 16px;
 }
 
 .project-img {
-  mix-blend-mode: overlay;
   width: 90%;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  transition: all 300ms ease-in-out;
 }
-.project-img:hover {
-  mix-blend-mode: normal;
-}
+
 .projects-description {
   text-align: center;
   margin: 1.5rem 1.5rem;
@@ -140,37 +136,53 @@ html {
   text-align: left;
 }
 .about-page {
-  padding-top: 5rem;
-  background: var(--main-bg);
-  background-size: cover;
+  background: linear-gradient(
+    to right,
+    rgba(176, 243, 241, 1) 0%,
+    rgba(247, 211, 225, 0.79) 64%,
+    rgba(255, 207, 223, 0.79) 71%,
+    rgba(255, 207, 223, 0.79) 100%
+  );
+  padding: 20vh 0;
+  max-width: 100%;
 }
 .about-intro {
   margin-bottom: 5rem;
 }
 .hero-photo {
-  width: 18.75rem;
-  border-radius: 16px;
-  box-shadow: var(--text-shadow);
+  width: 70%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .about-text {
+  margin-top: 32px;
   font-size: 1.25rem;
 }
+.about-text ul {
+  margin: 32px 0;
+  list-style: none;
+}
 .btn-to-projects {
+  position: relative;
+  margin-top: 32px;
+  display: inline-block;
   font-size: 1.25rem;
   text-decoration: none;
   padding: 16px 24px;
   border: 2px var(--accent-color) solid;
-  background: var(--accent-color);
-  color: var(--main-bg);
+  background: var(--main-bg);
+  color: var(--accent-color);
   border-radius: 16px;
   font-family: "Jost", sans-serif;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
+  overflow: hidden;
 }
 .btn-to-projects:hover {
-  color: var(--accent-color);
-  background: var(--main-bg);
+  color: var(--main-bg);
+  background-color: var(--accent-color);
 }
+
 .certificates h2 {
   font-size: 2rem;
   margin: 2.5rem 0;
@@ -178,7 +190,9 @@ html {
 .certificates div {
   padding: 1.5rem 0 3rem 0;
 }
-
+.education-img {
+  max-width: 400px;
+}
 .contacts {
   position: relative;
   margin: 0;
@@ -201,10 +215,7 @@ html {
   cursor: pointer;
   z-index: 1;
 }
-.header-class {
-  left: 32%;
-  top: 10%;
-}
+
 .type-1 {
   font-size: 1.5rem;
   left: 41%;
