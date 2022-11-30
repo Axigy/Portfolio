@@ -27,9 +27,8 @@ html {
 }
 .navbar-brand {
   position: relative;
-  border: var(--main-color) 2px solid;
-  padding: 4px;
-  border-radius: 8px;
+  padding: 8px;
+  border-radius: 50%;
   transition: all 200ms ease-out;
   text-shadow: 2px 2px 0px var(--main-bg), 5px 4px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -46,7 +45,7 @@ html {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background-color: var(--main-color);
+  background-color: #a88c7f;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
   transition: transform 1s;
@@ -72,7 +71,7 @@ html {
   min-height: 100%;
   padding-top: 20vh;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .header-class {
@@ -204,7 +203,7 @@ html {
   max-width: 100%;
   min-height: 100%;
   padding-top: 20vh;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .contact {
   max-width: 100%;
