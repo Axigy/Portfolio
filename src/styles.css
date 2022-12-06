@@ -100,6 +100,34 @@ html {
   font-weight: 600;
   color: var(--main-bg);
 }
+
+.introduction h1 {
+  transform: translate(-150%, 0px);
+  transition: all 0.3s ease-in 0s;
+}
+.introduction h2 {
+  transform: translate(-150%, 0px);
+  opacity: 0;
+  transition: all 0.3s ease-in 0s;
+}
+.home-btn {
+  transform: translate(-150%, 0px);
+  opacity: 0;
+  transition: all 0.3s ease-in 0s;
+}
+.loaded .introduction h1 {
+  transform: translate(0px, 0px);
+}
+.loaded .introduction h2 {
+  transform: translate(0px, 0px);
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+.loaded .home-btn {
+  transform: translate(0px, 0px);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
 .home-btn {
   position: relative;
   width: 150px;
